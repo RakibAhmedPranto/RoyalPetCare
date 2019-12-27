@@ -1,0 +1,23 @@
+.Section_panel{
+	background: #fff;
+	padding: 95px 25px;
+	
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.sectionBtn{
+	padding: 11px 30px;
+	border: 1px solid gray;
+	font-size: 15px;
+	font-weight: 400px;
+	color: #797979;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
+	transition: all 0.3s ease-in;
+
+}
+.sectionBtn:hover{
+	color: black;
+}
