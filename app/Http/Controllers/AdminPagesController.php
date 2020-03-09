@@ -9,6 +9,10 @@ class AdminPagesController extends Controller
 {
 
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function admin_index()
     {
       return view('backend/index');
@@ -33,37 +37,6 @@ class AdminPagesController extends Controller
     {
       return view('backend/addfeatures');
     }
-    public function admin_createblog()
-    {
-      return view('backend/createblog');
-    }
-    public function admin_manageblog()
-    {
-      $blogs = Blog::orderBy('id','desc')->get();
-      return view('backend/manageblog')->with('blogs',$blogs);
-    }
 
-    public function blog_store(Request $request)
-    {
-      $blog = new Blog;
-      $blog->title = $request->title;
-      $blog->slug = str_slug($request->title);
-      $blog->discription = $request->discription;
-      if($request->hasfile('image'))
-      {
-        $file = $request->file('image');
-        $extention = $file->getClientOriginalExtension();
-        $filename = time().'.'.$extention;
-        $file -> move('blogImage/images/',$filename);
-        $blog->image = $filename;
-      }
-      else {
-        return $request;
-        $blog->image = '';
-      }
-      $blog->save();
-
-      return redirect()->route('adminCreateBlog');
-    }
 
 }

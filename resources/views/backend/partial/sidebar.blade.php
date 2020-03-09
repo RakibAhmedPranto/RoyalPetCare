@@ -6,83 +6,99 @@
           <h5 class="centered">Admin</h5>
           <li class="mt">
             <a class="active" href="{{ route('adminIndex') }}">
-              <i class="fa fa-dashboard"></i>
-              <span>Dashboard</span>
+
+            Dashboard
               </a>
           </li>
 
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-book"></i>
-              <span>Pages</span>
-              </a>
+
+          <li><a href="">Landing page</a>
             <ul class="sub">
-              <li><a href="{{ route('adminLandingpage') }}">Landing page</a></li>
-              <li><a href="{{ route('adminAbout') }}">About Us</a></li>
-              <li><a href="lock_screen.html">Food Menu</a></li>
-              <li><a href="profile.html">Clients</a></li>
-              <li><a href="invoice.html">Blogs</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="">Slider Section</a>
+                <ul class="sub">
+                    <li><a href="{{ route('adminCreateSlider') }}">Create New Slider</a></li>
+                  <li><a href="{{ route('adminManageSlider') }}">Manage Slider</a></li>
+
+                </ul>
+
+
+              </li>
+
+              <li><a href="">Appointment Section</a>
+                <ul class="sub">
+                    <li><a href="{{ route('adminEditSecA') }}">Left Side Content</a></li>
+                  <li><a href="{{ route('adminAppointmentHistory') }}">Appointment History</a></li>
+                  <li><a href="{{ route('adminManageAppointment') }}">Pending Appointments</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ route('adminEditPetcounter') }}">Counter Section</a></li>
+              <li><a href="{{ route('adminHomeService') }}">Home Service Section</a></li>
+              <li><a href="#">Review Section</a>
+                <ul class="sub">
+                  <li><a href="{{ route('adminEditSecC') }}">Manage Content</a></li>
+                  <li><a href="{{ route('adminCreateReview') }}">Create New Review</a></li>
+                  <li><a href="{{ route('adminManageReview') }}">Manage All Reviews</a></li>
+                </ul>
+
+              </li>
 
             </ul>
-          </li>
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-tasks"></i>
-              <span>Menu</span>
-              </a>
-            <ul class="sub">
-              <li><a href="">Add Menu</a></li>
-              <li><a href="">Add Sub Menu</a></li>
-              <li><a href="">Delete Menu</a></li>
-            </ul>
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-tasks"></i>
-              <span>Forms</span>
-              </a>
-            <ul class="sub">
-              <li><a href="#">Form Components</a></li>
-              <li><a href="#">Advanced Components</a></li>
-              <li><a href="#">Form Validation</a></li>
-              <li><a href="#">Contact Form</a></li>
-            </ul>
-          </li>
-          </li>
 
-          <li>
-            <a href="inbox.html">
-              <i class="fa fa-envelope"></i>
-              <span>Mail </span>
-              </a>
           </li>
-          <li class="sub-menu">
-            <a href="features.html">
-              <i class="fa fa-bar-chart">
-                <span>Features</span>
-              </i>
-            </a>
+          <li><a href="#">Services</a>
             <ul class="sub">
-              <li><a href="{{ route('adminAddnewFeatures') }}">Add New Feature</a></li>
-              <li><a href="featureslis.html">Feature List</a></li>
-              <li><a href="archive.html">Archive</a></li>
+              <li><a href="{{ route('adminCreateService') }}">Create New Service</a></li>
+              <li><a href="{{ route('adminManageService') }}">Manage Services</a></li>
+              <li><a href="{{ route('adminServiceBanner') }}">Manage Services Banner</a></li>
+            </ul>
+          </li>
+          <li><a href="profile.html">Contact</a>
+            <ul class="sub">
+              <li><a href="{{ route('adminEditContact') }}">Edit Contact Information</a></li>
+              <li><a href="{{ route('adminManageFeedback') }}">Customer Feedback</a></li>
+              <li><a href="{{ route('adminManageBanner') }}">Manage Contact Banner</a></li>
             </ul>
           </li>
 
+          <li><a href="profile.html">About Us</a>
+            <ul class="sub">
+              <li><a href="{{ route('adminEditAboutUs') }}">Manage About Us Page</a></li>
+              <li><a href="{{ route('adminAboutUsBanner') }}">Manage About Us Banner</a></li>
+            </ul>
+          </li>
 
-          <li class="sub-menu">
-            <a href="features.html">
-              <i class="fa fa-bar-chart">
-                <span>Blog</span>
-              </i>
-            </a>
+          <li><a href="#">Blogs</a>
             <ul class="sub">
               <li><a href="{{ route('adminCreateBlog') }}">Create Blog</a></li>
               <li><a href="{{ route('adminManageBlog') }}">Manage Blog</a></li>
-              <li><a href="archive.html">Archive</a></li>
+              <li><a href="{{ route('adminCreateBlogCategory') }}">Create Blog Category</a></li>
+              <li><a href="{{ route('adminBlogBanner') }}">Manage Blog Page Banner</a></li>
             </ul>
           </li>
+          <li><a href="faq.html">Team Management</a>
+            <ul class="sub">
+              <li><a href="{{ route('adminCreateTeam') }}">Add New Team Member</a></li>
+              <li><a href="{{ route('adminManageTeam') }}">Manage Team Member</a></li>
+            </ul>
+
+          </li>
+
+
+          <li><a href="{{ route('adminMailingList') }}">Mailing List</a></li>
+
+          <li><a href="{{ route('register') }}">Add New Admin</a></li>
+
+
+          </li>
+
+
+
+
+
+
+
+
+
         </ul>
         <!-- sidebar menu end-->
       </div>

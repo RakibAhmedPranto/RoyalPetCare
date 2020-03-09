@@ -1,0 +1,584 @@
+//default
+
+
+@media(min-width: 1920px){
+  .pet_blog .pet_blog_init .col-md-4 .content_border .p_Text{
+    font-size: 15px;
+font-weight: 400;
+margin-top: 15px;
+line-height: 24px;
+color: #7D8A7C;
+margin-bottom: 20px;
+height: 120px;
+padding-bottom: 10px;
+overflow: hidden;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+
+  .our_service .row .extra_fild .wrapper_round:first-child{
+    left: 50px;
+  }
+  .our_service .row .extra_fild .wrapper_round:last-child{
+    right: 50px;
+  }
+
+
+}
+
+
+@media(max-width: 768px) {
+  .mbp45 {
+    padding: 45px 0 !important;
+  }
+}
+
+@media(max-width: 767px) {
+  .p75, .p90, .p95, .p60 {
+    padding: 45px 0 !important;
+  }
+  .Title {
+    font-size: 20px !important;
+    line-height: 25px;
+  }
+  .innerBanner.asShortBanner {
+    height: 70px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 11px;
+  }
+  .epBtn {
+    padding: 12px 45px !important
+  }
+  .our_service{
+    .slick-dots{
+      bottom: -50px;
+    }
+  }
+
+}
+
+
+//--------------end of default
+
+
+
+// ----------- my code ------------------//
+
+@media(min-width: 1920px){
+  .our_service {
+    padding-bottom: 0;
+    height: 70vh;
+  }
+
+  .association .col-md-4 {
+    padding: 200px;
+  }
+}
+@media(max-width: 1440px){
+  .why_us .container .textwrapper table tr td:first-child {
+    width: 22%;
+  }
+
+  .why_us .container .textwrapper table tr td:last-child {
+    width: 78%;
+    padding-left: 15px !important;
+  }
+
+  .mail_subscription .mail_wrapper{
+    width: 70%;
+  }
+  .pet_blog .pet_blog_init .col-md-4 .like_comment .like{
+    width: 45%;
+  }
+
+
+  .pet_blog .pet_blog_init .col-md-4 .like_comment .comment{
+    width: 55%;
+  }
+}
+
+@media(max-width: 768px){
+  .Home_slider {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Home_slider .dog_paw {
+    position: relative;
+    height: 36vh;
+    width: 70%;
+    border: 2px solid white;
+  }
+  .Home_slider .container .content_wraper{
+    width: 30%;
+
+  }
+
+  .Home_slider .container .Title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #270808;
+    font-family: "Poppins";
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+  .Home_slider .phone p{
+    font-size: 16px;
+  }
+  .Home_slider .phone img{
+    height: 32px;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  /* home page start */
+  /*============================================== home slider ======================================*/
+  .Home_slider{
+    height: 75vh;
+    position: relative;
+
+    .container{
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+    .row{
+      flex-direction: column-reverse !important;
+    }
+  }
+  .Home_slider .test_1 .home_image{
+    height: auto;
+    background-size: auto !important;
+  }
+  .Home_slider .dog_paw {
+
+    height: 50vh !important;
+    width: 100% !important;
+
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .Home_slider .test_2 .image_single .imgshow {
+    padding-top: 72.09%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .Home_slider .container .content_wraper {
+    width: 100%;
+    z-index: 999;
+    padding: 20px 15px;
+    text-align: center;
+  }
+  .Home_slider .phone{
+    text-align: center;
+
+    display: inline-flex;
+  }
+  .Home_slider .container .Title{
+    margin-bottom: 15px;
+    text-align: center !important;
+  }
+  .Home_slider .test_2 .image_single{
+    position: absolute;
+  }
+
+  /*================================================ home slider =====================================*/
+
+
+
+
+
+
+
+  /*========================================= why us section ===================================*/
+
+  .why_us{
+
+    border-top: 1px solid rgba(112,112,112,0.5);
+    table{
+      tr{
+        margin-bottom: 15px;
+      }
+    }
+    .formwrapper{
+      margin-top: 15px;
+    }
+  }
+  .why_us .container .imagetext .short_msg {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    color: #7D8A7C;
+    line-height: 25px;
+  }
+  .why_us .container .textwrapper .Title{
+    margin-bottom: 20px;
+  }
+  .why_us .container .textwrapper .main_title{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .why_us .container .textwrapper table tr td:first-child {
+    width: 25%;
+    display: none;
+  }
+  .why_us .container .textwrapper table tr td:last-child {
+    width: 100%;
+    padding-left: 0 !important;
+  }
+  .why_us .container .textwrapper .main_title {
+    margin-bottom: 15px;
+  }
+  .why_us .container .formwrapper .flex {
+    display: block;
+    margin: 0;
+  }
+  .why_us .container .formwrapper .form_wrapper_content {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ============================== why us end ========================== */
+
+
+  /* pet blog start
+   */
+
+
+  .pet_blog_init{
+    padding: 0;
+  }
+  .pet_blog .pet_blog_init .col-md-4 .content_border {
+
+    padding: 0 15px 15px;
+  }
+  .pet_blog .main_title{
+    margin-bottom: 25px;
+  }
+
+
+  // mail subscription
+
+
+  .mail_subscription .mail_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    text-align: center;
+  }
+  .mail_subscription .mail_wrapper h3 {
+    margin: 0 auto;
+    font-size: 17px;
+  }
+  .mail_subscription .mail_wrapper .form-control {
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+  }
+  .mail_subscription .mail_wrapper .form-group img {
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    height: 48px;
+    width: 48px;
+  }
+
+
+  //review
+
+  .our_client_trust .main_title{
+    font-size: 20px !important;
+    margin-top: 0;
+  }
+  .our_client_trust .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .our_client_trust .review_wrapper .review_content_text {
+    padding: 0;
+  }
+  .our_client_trust .row .col-md-3:first-child {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+
+
+  //pet care solution
+
+  .pet_care_solution .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .pet_care_solution .container .main_title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .pet_care_solution .container .current-status__count-down .col-md-5 {
+    margin-bottom: 25px;
+    width: 50%;
+    float: left;
+    padding: 0;
+  }
+  .pet_care_solution .container .current-status__count-down {
+    margin-top: 25px;
+  }
+  .pet_care_solution .dog_paw{
+    display: none;
+  }
+  .pet_care_solution .container .current-status__count-down .col-md-5:nth-child(3){
+    margin-bottom: 0;
+  }
+  .pet_care_solution .container .current-status__count-down .col-md-5:nth-child(4){
+    margin-bottom: 0;
+  }
+
+
+
+
+
+
+
+
+  .our_team{
+    height: auto;
+    .our_team .overlay p{
+      margin: 5px 0 0;
+line-height: 18px;
+font-size: 15px;
+    }
+    h3{
+      font-family: $popin;
+      font-weight: bold;
+      text-transform: capitalize;
+      font-size: 24px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #021001;
+      margin:  0 0  45px 0 ;
+      span{
+        color: $hover;
+      }
+    }
+    .our_service_image_wrapper{
+      height: 150px;
+      width: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    .serviceTitle{
+      margin: 15px 0 0;
+            font-size: 14px;
+    }
+    .hover{
+      display: block;
+
+      .round_image{
+
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        transition: 0.7s all ease-in;
+        transform: scale(1.01);
+
+
+        .overlay{
+
+          position: absolute;
+          height: 50%;
+          width: auto;
+          .serviceTitle{
+            margin: 30px 0 5px 0;
+            font-size: 10px;
+            text-align: center;
+
+          }
+          p{
+            font-size: 14px;
+            font-family: $popin;
+            text-align: center
+          ;
+            font-weight: 400;
+            color: #727272;
+          }
+        }
+      }
+
+      &:hover{
+
+        .round_image{
+          transform: scale(1.05);
+        }
+      }
+
+    }
+    .side_field{
+      position: relative;
+     //height: 400px;
+      .our_service_image_wrapper{
+        display: block;
+        margin: auto;
+      }
+    }
+    .social{
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      display: flex;
+      margin-top: 25px;
+      li{
+        display: inline-block;
+        a{
+          color: white;
+          background-color: rgba(130,136,149,0.6);
+          height: 40px;
+          width: 40px;
+          margin-right: 12px;
+          border-radius: 50%;
+          line-height: 40px;
+          text-align: center;
+          display: block;
+          font-size: 20px;
+          position: relative;
+          transition: 0.3s all  ease-in;
+          &:hover{
+            background: $hover;
+          }
+
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+  .our_service{
+
+    height: auto;
+
+    h3{
+      font-family: $popin;
+      font-weight: bold;
+      text-transform: capitalize;
+      font-size: 24px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #021001;
+      margin: 0 0 60px 0;
+      .greenText{
+        color: $hover;
+      }
+    }
+    .serviceTitle{
+      margin: 15px 0 ;
+    }
+    .row{
+      display: flex;
+      position: relative;
+
+      .our_service_image_wrapper{
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+      }
+
+      .hover{
+        display: block;
+
+        .round_image{
+
+          height:150px;
+          width: 150px;
+          border-radius: 50%;
+          transition: 0.7s all ease-in;
+          transform: scale(1.01);
+
+
+          .overlay{
+
+
+            height: 50%;
+            width: auto;
+            top: 100%;
+            .serviceTitle{
+              margin: 30px 0 5px 0;
+              font-size: 14px;
+              font-family: $popin;
+              font-weight: bold;
+              color: #272929;
+              text-align: center;
+            }
+            p{
+              font-size: 14px;
+              font-family: $popin;
+              text-align: center
+            ;
+              font-weight: 400;
+              color: #727272;
+            }
+          }
+        }
+
+        &:hover{
+
+          .round_image{
+            transform: scale(1.05);
+          }
+        }
+
+      }
+
+
+
+      .field1{
+        .single_field_box{
+
+        }
+      }
+
+    }
+
+    .overlay{
+      width:auto;
+      text-align: center;
+      h3{
+        margin: 25px 0 0 0;
+        font-size: 15px;
+      }
+    }
+  }
+
+}

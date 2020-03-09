@@ -1,0 +1,1150 @@
+@import "reset";
+@import "var";
+@import "fonts";
+
+
+
+
+/*==================home slider =====================*/
+.Home_slider{
+  height: 85vh;
+  z-index: 0;
+  .container{
+    .row{
+      display: flex;
+    }
+    .content_wraper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .Title{
+      font-size: 30px;
+      font-weight: bold;
+      color: #270808;
+      font-family: $popin;
+      text-align: left;
+      text-transform: capitalize;
+      line-height: 45px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+  }
+  .phone{
+    display: flex;
+    img{
+      display: inline;
+      height: 46px;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 500;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin: 10px 15px;
+    }
+  }
+  .dog_paw{
+   // @extend %bg;
+
+   // background: white;
+    //padding-top: 42%;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    &:before{
+
+    }
+  }
+    .test_1{
+
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      position: absolute;
+      img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+      .home_image{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+
+        width: 100%;
+        @extend %bg;
+
+        //padding-top: 72.09%;
+      }
+
+  }
+  .test_2{
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    img{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    .image_single{
+      height: 100%;
+      width: 100%;
+
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      .imgshow{
+        @extend %bg;
+        padding-top: 72.09%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+    }
+
+    .slick-track{
+      width: 100%;
+      height: 100% !important;
+    }
+    .slick-list{
+      height: 100%;
+    }
+
+
+  }
+  .home_slider_slick{
+    @extend %bg;
+    @extend %overlay;
+    display: none;
+  }
+}
+.greenText{
+  color: $hover;
+}
+/*================== home slider end ===============*/
+
+
+
+
+
+
+
+/*==================== why us section ==================*/
+.why_us{
+  padding-top: 0;
+  .container{
+    .textwrapper{
+      .main_title{
+        margin-bottom: 45px;
+      }
+      .Title{
+        color: #39B42E;
+        font-size: 24px ;
+        font-family: $popin !important;
+        text-align: left !important;
+        font-weight: bold !important;
+        text-transform: capitalize !important;
+        margin-bottom: 35px;
+      }
+      table{
+        tr{
+          td:first-child{
+            width: 15%;
+          }
+          td:last-child{
+            width: 85%;
+            padding-left: 15px !important;
+          }
+        }
+      }
+      p{
+        font-size: 16px;
+        font-family: $popin;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #7D8A7C;
+        line-height: 32px;
+      }
+    }
+    .imagetext{
+      img{
+        height: 80px;
+        width: 185px;
+      }
+      table{
+        tr{
+          td:last-child{
+            padding: 0 0px 0 10px;
+          }
+        }
+      }
+
+      .short_title{
+        font-size: 20px;
+        font-family: $popin;
+        font-weight: bold;
+        color: #010000;
+        text-transform: capitalize;
+      }
+      .short_msg{
+        font-family: $popin;
+        font-size: 14px;
+        font-weight: 400;
+        color: #7D8A7C;
+        line-height: 29px;
+      }
+    }
+
+    .formwrapper{
+      h3{
+        font-size: 24px;
+        font-family: $popin;
+        color: #485747;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 10px 0 30px 0;
+        span{
+          color: #10A701;
+        }
+      }
+      .form_box{
+        padding: 15px 30px 15px 30px;
+        height: 100%;
+        border: 1px solid rgba(139,139,139,0.35);
+      }
+      .form_wrapper_content{
+        margin-bottom: 15px;
+        border-bottom: 1px solid #707070;
+        padding: 0 0 10px 0;
+        .col-md-12{
+          padding: 0;
+        }
+        .col-md-6{
+          &:first-child{
+            padding: 0 15px 0 0px;
+          }
+          &:last-child{
+            padding: 0 0 0 15px;
+          }
+          .date{
+            border-radius: 0;
+            height: 48px;
+            cursor: pointer;
+          }
+        }
+        .form-control[readonly]{
+          background: transparent;
+          cursor: pointer;
+        }
+
+        .fordate{
+          border: none;
+          &:focus{
+            opacity: 1;
+
+          }
+          &:hover{
+            opacity: 1;
+          }
+        }
+
+        .form-control{
+          height: 40px;
+        }
+        textarea{
+          height: 95px !important;
+          background: rgba(230,213,213,0.69);
+          resize: none;
+          &::placeholder{
+            font-family: $popin;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 1px;
+          }
+        }
+        .TZBtn{
+          padding: 12px 0;
+          width: 100%;
+          &:hover{
+            span{
+              z-index: 1;
+            }
+          }
+        }
+      }
+      .form_wrapper_content:last-child{
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .form-group{
+
+        p{
+          padding: 10px 0px 0px 0;
+          width: 100px;
+          text-transform: capitalize;
+        }
+
+      }
+      .flex{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+      .nice-select{
+      // border: none;
+      }
+    }
+  }
+  .nice-select{
+    margin-bottom: 20px;
+    line-height: 38px;
+    height: 40px;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    padding-left: 12px;
+  }
+  .form-control{
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 400;
+
+    &:focus{
+      border-color: $hover;
+    }
+
+  }
+  /*Date Picker */
+  .datepicker-panel > ul > li{
+    font-family: $popin !important;
+  }
+}
+/*=================== why us section end ===============*/
+
+
+
+
+
+/*===================== our service =======================*/
+.our_service{
+  @extend %bg;
+  height: 100vh;
+
+  h3{
+    font-family: $popin;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #021001;
+    margin: 0 0 60px 0;
+    .greenText{
+      color: $hover;
+    }
+  }
+  .serviceTitle{
+    margin: 15px 0 ;
+  }
+  .row{
+    display: flex;
+    position: relative;
+
+    .our_service_image_wrapper{
+      height: 250px;
+      width: 250px;
+      overflow: hidden;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+    }
+
+    .hover{
+      display: block;
+
+      .round_image{
+        @extend %bg;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        transition: 0.7s all ease-in;
+        transform: scale(1.01);
+
+
+        .overlay{
+          @extend %overlay;
+          position: absolute;
+          height: 50%;
+          width: 220px;
+          top: 100%;
+          .serviceTitle{
+            margin: 30px 0 5px 0;
+            font-size: 20px;
+            font-family: $popin;
+            font-weight: bold;
+            color: #272929;
+            text-align: center;
+          }
+          p{
+            font-size: 14px;
+            font-family: $popin;
+            text-align: center
+          ;
+            font-weight: 400;
+            color: #727272;
+          }
+        }
+      }
+
+      &:hover{
+
+        .round_image{
+          transform: scale(1.05);
+        }
+      }
+
+    }
+
+
+    .extra_fild{
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      .wrapper_round:first-child{
+        position: absolute;
+        left: 0px;
+      }
+      .wrapper_round:last-child{
+        position: absolute;
+        right: 0px;
+      }
+
+    }
+    .side_field{
+      position: relative;
+      .single_field_box{
+        position: absolute;
+        top: 130px  ;
+
+        .our_service_image_wrapper{
+          overflow: hidden;
+          display: block;
+          margin: auto;
+
+        }
+      }
+    }
+    .field1{
+      .single_field_box{
+        left: 0;
+      }
+    }
+    .field3{
+      .single_field_box{
+        right: 0;
+      }
+    }
+  }
+
+  .overlay{
+    width: 300px;
+    text-align: center;
+  }
+}
+/*===================== our service end ====================*/
+
+
+
+
+/*====================== our team ============================*/
+.our_team{
+  height: auto;
+
+  h3{
+    font-family: $popin;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #021001;
+    margin:  0 0  45px 0 ;
+    span{
+      color: $hover;
+    }
+  }
+  .overlay{
+    p{
+      font-size: 18px;
+font-family: "Poppins";
+margin: 0 0 20px 0;
+text-align: center;
+line-height: 27px;
+font-weight: 400;
+color: #7D8A7C;
+    }
+  }
+  .our_service_image_wrapper{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .serviceTitle{
+    margin: 15px 0 10px;
+  }
+  .hover{
+    display: block;
+
+    .round_image{
+      @extend %bg;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      transition: 0.7s all ease-in;
+      transform: scale(1.01);
+
+
+      .overlay{
+        @extend %overlay;
+        position: absolute;
+        height: 50%;
+        width: 220px;
+        top: 100%;
+        .serviceTitle{
+          margin: 30px 0 5px 0;
+          font-size: 20px;
+          font-family: $popin;
+          font-weight: bold;
+          color: #272929;
+          text-align: center;
+        }
+        p{
+          font-size: 14px;
+          font-family: $popin;
+          text-align: center
+        ;
+          font-weight: 400;
+          color: #727272;
+        }
+      }
+    }
+
+    &:hover{
+
+      .round_image{
+        transform: scale(1.05);
+      }
+    }
+
+  }
+  .side_field{
+    position: relative;
+   //height: 400px;
+    .our_service_image_wrapper{
+      display: block;
+      margin: auto;
+    }
+  }
+  .social{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    margin-top: 25px;
+    li{
+      display: inline-block;
+      a{
+        color: white;
+        background-color: rgba(130,136,149,0.6);
+        height: 40px;
+        width: 40px;
+        margin-right: 12px;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+        display: block;
+        font-size: 20px;
+        position: relative;
+        transition: 0.3s all  ease-in;
+        &:hover{
+          background: $hover;
+        }
+
+      }
+    }
+  }
+}
+/*====================== our team ============================*/
+
+
+
+
+/*====================== pet solution care ===================*/
+.pet_care_solution{
+  padding-bottom: 0;
+  background: #F3F3F3;
+  .container{
+    .row{
+      display: flex;
+    }
+    .main_title{
+      font-size: 25px;
+      color: #242526;
+      text-transform: capitalize;
+      font-weight: bold;
+      margin-bottom: 30px;
+      span{
+        color: $hover;
+      }
+    }
+    .content_wraper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .Title{
+      font-size: 30px;
+      font-weight: bold;
+      color: #270808;
+      font-family: $popin;
+      text-align: left;
+      text-transform: capitalize;
+      line-height: 45px;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
+    .p_Text{
+      color: #7D8A7C;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+    .current-status__count-down{
+      margin-top: 45px;
+      .col-md-5{
+        margin-bottom: 70px;
+      }
+    }
+    .relation_wrapper{
+      display: inline-flex;
+    h3{
+      margin: auto;
+      padding-left: 15px;
+    }
+
+    }
+
+  }
+  .dog_paw{
+    // @extend %bg;
+
+    // background: white;
+    //padding-top: 42%;
+    position: relative;
+    height: 80vh;
+
+    &:before{
+
+    }
+  }
+  .test_1{
+
+    height: 90%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    img{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+  }
+  .test_2{
+    height: 90%;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    position: absolute;
+    img{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+  }
+}
+/*====================== pet solution care  end===================*/
+
+
+
+
+
+
+
+
+/*====================== our client trust ===================*/
+.our_client_trust{
+
+  .main_title{
+    font-weight: 400;
+    font-family: $popin;
+    font-size: 30px;
+    color: #353636;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 40px;
+    span{
+      color: $hover;
+      font-weight: bold;
+    }
+    span:last-child{
+      font-weight: bold;
+      color: #232425;
+    }
+  }
+  .dog_background_wrapper{
+
+    .dog_background__item{
+      @extend %bg;
+      padding-top: 76.15%;
+    }
+  }
+  .review_wrapper{
+    .review_content_text{
+      padding: 0 40px;
+      .content_border{
+        border: 1px solid rgba(112,112,112,0.24);
+        height: 400px;
+        overflow: hidden;
+        padding: 30px;
+        p{
+          font-size: 15px;
+          font-style: italic;
+          font-weight: 300;
+          color: #7D8A7C;
+          line-height: 30px;
+          margin-top: 10px;
+          height: 275px;
+          overflow-y: hidden;
+          margin-bottom: 0;
+        }
+        .star{
+          display: flex;
+          justify-content: center;
+          padding: 20px 0;
+          span{
+            display: inline-flex;
+            justify-content: center;
+            padding: 0 15px;
+          }
+        }
+      }
+      .overlay_user{
+
+        img{
+          margin-left: 30px;
+        }
+        .usr_wraper{
+          display: flex;
+          img{
+            margin: 0;
+          }
+          p{
+            margin: auto 15px;
+            color: #7D8A7C;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .slick-dots{
+      bottom: -60px;
+    }
+
+
+    .slick-dots li button:before{
+      opacity: 0.65;
+      color: black;
+    }
+    .slick-dots li.slick-active button:before{
+      color: $hover !important;
+    }
+    .slick-dots li button:hover:before, .slick-dots li button:focus:before{
+      color: #000000;
+      opacity: 0.75;
+    }
+  }
+  .row{
+    display: flex;
+    .col-md-3{
+      position: relative;
+      .dog_background_wrapper{
+        position: relative;
+        bottom: 0;
+      }
+    }
+  }
+}
+/*====================== our client trust end ===================*/
+
+
+
+
+
+
+
+/*======================mail funciton =========================*/
+
+.mail_subscription{
+  height: 150px;
+  background: $hover;
+  position: relative;
+
+  .mail_wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: auto auto;
+    /* justify-content: left; */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+    h3{
+      margin: auto;
+      font-family: $popin;
+      font-weight: 400;
+      font-size: 26px;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+      padding-right: 15px;
+
+    }
+    .form-control{
+      width: 35vw;
+      height: 75px;
+      border-radius: 50px;
+      position: relative;
+      padding-left: 50px;
+
+      &::placeholder{
+        font-size: 15px;
+        color: #7D8A7C;
+        font-weight: 400;
+
+      }
+    }
+
+    .form-group{
+      position: relative;
+      margin: 0;
+      img{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        height: 65px;
+        width: 65px;
+      }
+    }
+
+  }
+}
+
+/*====================== mail functin ===========================*/
+
+
+
+/*====================== blog start ==========================*/
+.pet_blog{
+  background: #F3F3F3;
+  .dog_background__item{
+    padding-top: 57.47%;
+    @extend %bg;
+  }
+  .main_title{
+    color: #021001;
+    font-family: $popin;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+    letter-spacing: 2px;
+
+    span{
+      color: $hover;
+    }
+  }
+  .user_image{
+    height: 25px;
+    width: 25px;
+    padding-right: 15px;
+    @extend %bg;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+  }
+
+  .pet_blog_init{
+    .col-md-4{
+
+      .content_border{
+        background: #FFFFFF;
+        border: 1px solid rgba(112,112,112,0.3);
+        padding:0 25px 25px;
+
+        .main_title{
+          text-align: center;
+          letter-spacing: 2px;
+          line-height: 30px;
+          font-size: 20px;
+          font-weight: 400;
+          color: #232425;
+          font-family: $popin;
+          margin-bottom: 25px;
+          height: 88px;
+          overflow: hidden;
+        }
+        a:hover{
+          .main_title{
+            color: $hover;
+          }
+          outline: none;
+        }
+        a:focus{
+          color: $hover;
+        }
+        .user{
+          width: 50%;
+          float: left;
+          display: flex;
+          flex-direction: row;
+          h3{
+            font-size: 10px;
+            font-family: $popin;
+            color: #232425;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin: auto 0px auto 8px;
+          }
+          i{
+            font-size: 18px;
+            margin: auto 0;
+          }
+        }
+        .calender{
+          display: flex;
+          flex-direction: row;
+          float: left;
+          width: 50%;
+          place-content: flex-end;
+          img{
+            height: 20px;
+            width: 25px;
+            padding-right: 5px;
+            display: block;
+            margin: auto 0 auto auto;
+
+          }
+          i{
+            font-size: 18px;
+            margin: auto 0;
+          }
+          p{
+            font-size: 10px;
+            font-family: $popin;
+            color: #232425;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin: auto 0px auto 8px;
+          }
+        }
+        .content{
+          width: 100%;
+          display: flex;
+          background: rgba(177,177,177,0.05);
+          padding: 5px;
+        }
+        .p_Text{
+          font-size: 12px;
+          font-weight: 400;
+          margin-top: 15px;
+          line-height: 20px;
+          color: #7D8A7C;
+          margin-bottom: 20px;
+          height: 120px;
+          padding-bottom: 10px;
+          overflow: hidden;
+          //display: none;
+          &:first-child{
+            display: block !important;
+          }
+
+        }
+
+
+      }
+      .like_comment{
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        background: rgba(177,177,177,0.2);
+        .like{
+          width: 50%;
+          float: left;
+          display: flex;
+          flex-direction: row;
+          img{
+            display: inline-block;
+            margin: auto 0;
+          }
+          i{
+            font-size: 25px;
+          }
+          p{
+            margin: auto 15px;
+            font-family: $popin;
+            font-size: 12px;
+            font-weight: 300;
+            color: #7D8A7C;
+          }
+        }
+        .comment{
+          width: 50%;
+          float: left;
+          display: flex;
+          flex-direction: row;
+          text-align: right;
+          justify-content: flex-end;
+          img{
+            display: inline-block;
+            margin: auto 0;
+          }
+          i{
+            font-size: 25px;
+          }
+          p{
+            margin: auto 15px;
+            font-family: $popin;
+            font-size: 12px;
+            font-weight: 300;
+            color: #7D8A7C;
+          }
+        }
+      }
+
+      .user_time{
+        .p_Text{display: none;
+          &:first-of-type {
+            display: block !important;
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .slick-dots{
+    bottom: -60px;
+  }
+
+
+  .slick-dots li button:before{
+    opacity: 0.65;
+    color: black;
+  }
+  .slick-dots li.slick-active button:before{
+    color: $hover !important;
+  }
+  .slick-dots li button:hover:before, .slick-dots li button:focus:before{
+    color: #000000;
+    opacity: 0.75;
+  }
+
+}
+/*====================== blog end =============================*/
+
+
+
+
+
+
+
+
+
+/*=============== association =====================*/
+
+.association{
+  padding-bottom: 0;
+  .main_title{
+    color: #021001;
+    font-family: $popin;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    span{
+      color: $hover;
+    }
+  }
+  .association_image{
+    @extend %bg;
+    padding-top: 100%;
+  }
+  .col-md-4{
+    padding: 110px;
+  }
+}
+/*=============== association end =================*/
+
+
+
+
+@import "home-responsive";
